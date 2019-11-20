@@ -3,3 +3,5 @@ tests_output
 chromedriver.log
 geckodriver.log
 debug.log
+y
+y.pub
