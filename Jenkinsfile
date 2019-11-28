@@ -1,6 +1,8 @@
 pipeline {
     agent {
-        docker {image "margelotaccola/node-wd"}
+        docker {
+            image "margelotaccola/node-wd"}
+            args "--network=skynet"
     }
     stages {
         stage('Build') {
