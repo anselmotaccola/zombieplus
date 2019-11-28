@@ -3,6 +3,7 @@ pipeline {
         docker {
             image "margelotaccola/node-wd"
             args "--network=skynet"
+        }
     }
     stages {
         stage('Build') {
