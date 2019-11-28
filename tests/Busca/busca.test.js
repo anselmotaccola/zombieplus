@@ -39,7 +39,7 @@ module.exports = {
         let movie = browser.page.movie()
 
         movie
-            .waitForElementPresent('@tr', 10000)
+            .waitForElementPresent('@tr', 15000)
             .expect.elements('@tr').count.to.equal(1)
         
         movie.assert.containsText('@tr', movieData.title)

@@ -46,9 +46,10 @@ module.exports = {
         //visible =  procura o elemento na pagina, mas tambem procura pelo atributo display
         // Present = verifica  se o elemente está na pagina
         movie
-            .waitForElementPresent('@list', 10000)
+            .waitForElementPresent('@list', 15000)
             .assert.containsText('@list', movieData.title)
     }
+    
 
 }
 
