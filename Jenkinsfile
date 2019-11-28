@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {image "margelotaccola/node"}
+        docker {image "margelotaccola/node-wd"}
     }
     stages {
         stage('Build') {
