@@ -18,7 +18,8 @@ pipeline {
             }
             post{
                 always{
-                    junit testResults:"tests_output/**/*.xml"
+                    junit  testeDataPublishers:[[$class: 'AttachmentPublisher']], testResults:"tests_output/**/*.xml"
+
                 }
             }
         }
