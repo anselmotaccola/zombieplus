@@ -22,9 +22,6 @@ module.exports = {
 
     movie
       .waitForElementVisible('@alertDanger', 15000)
-      .assert.containsText(
-        '@alertDanger',
-        'Puxa! não encontramos nada aqui :('
-      );
+      .assert.containsText('@alertDanger', 'Puxa! não encontramos nada aqui.');
   },
 };
